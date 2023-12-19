@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mkozhemiakin-portfolio": {
+      "hosting": {
+        "mkozhemiakin-portfolio": [
+          "mkozhemiakin-portfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mkozhemiakin-portfolio"
+  }
+}
