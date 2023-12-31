@@ -9,6 +9,7 @@ import { MenuItem } from 'primeng/api';
   standalone: true,
   imports: [DockModule, NgOptimizedImage],
   templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {

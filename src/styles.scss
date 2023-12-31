@@ -4,4 +4,36 @@
 
 body {
   background-color: $white-creamy;
+  font-family: 'Noto Sans SC', sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+.highlight-text {
+  background: linear-gradient(to top, #ffcc00 25%, transparent 50%);
+  display: inline;
+}
+
+.linked-text {
+  transition: font-size 0.4s ease-in-out;
+}
+
+.linked-text:hover {
+  font-size: 26px;
 }

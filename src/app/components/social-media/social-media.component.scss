@@ -1,0 +1,10 @@
+.social {
+  transition-duration: 0.7s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.social:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
