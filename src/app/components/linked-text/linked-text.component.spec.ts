@@ -8,10 +8,9 @@ describe('LinkedTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LinkedTextComponent]
-    })
-    .compileComponents();
-    
+      imports: [LinkedTextComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LinkedTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
