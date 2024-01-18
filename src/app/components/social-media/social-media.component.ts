@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Social } from '@app/models/social.model';
+import { SocialModel } from '@app/models/social.model';
 
 @Component({
   selector: 'app-social-media',
@@ -9,5 +9,5 @@ import { Social } from '@app/models/social.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SocialMediaComponent {
-  @Input() social: Social | undefined;
+  @Input() social: SocialModel | undefined;
 }

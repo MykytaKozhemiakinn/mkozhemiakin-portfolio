@@ -2,15 +2,13 @@
   <h1>Let's talk.</h1>
   <p>Do not hesitate to contact me to hire for a project :)</p>
   <p>You can do it via phone</p>
-  <p class="highlight-text">+48 796 049 089</p>
+  <p class="highlight-text-yellow">+48 796 049 089</p>
   <p>Or write me an email on</p>
-  <p class="highlight-text">mykyta.kozhemiakin&#64;gmail.com</p>
+  <p class="highlight-text-yellow">mykyta.kozhemiakin&#64;gmail.com</p>
 
-  @if (socials?.length) {
-    <div class="mt-4">
-      @for (social of socials; track social.name) {
-        <app-social-media [social]="social" />
-      }
-    </div>
-  }
+  <div class="mt-4">
+    @for (social of socials; track social.name) {
+      <app-social-media [social]="social" />
+    }
+  </div>
 </div>

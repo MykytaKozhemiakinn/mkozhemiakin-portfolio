@@ -25,8 +25,8 @@ a {
   color: $dark;
 }
 
-.highlight-text {
-  background: linear-gradient(to top, #ffcc00 25%, transparent 50%);
+.highlight-text-yellow {
+  background: linear-gradient(to top, $yellow 25%, transparent 50%);
   display: inline;
 }
 
@@ -36,4 +36,8 @@ a {
 
 .linked-text:hover {
   font-size: 26px;
+}
+
+.title {
+  color: $grey;
 }

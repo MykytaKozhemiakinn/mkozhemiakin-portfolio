@@ -1,11 +1,11 @@
-import { Social } from '@app/models/social.model';
+import { SocialModel } from '@app/models/social.model';
 import { createReducer, on } from '@ngrx/store';
 import { SocialsActions } from '@app/store/socials/index';
 
-export const socialsFeatureKey = 'socials';
+export const socialsFeatureKey: string = 'socials';
 
 export interface State {
-  socials: Social[] | undefined;
+  socials: SocialModel[] | undefined;
 }
 
 const initialState: State = {

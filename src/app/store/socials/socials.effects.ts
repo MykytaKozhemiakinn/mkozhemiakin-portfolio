@@ -3,7 +3,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { SocialsActions } from '@app/store/socials/index';
 import { from, map, switchMap } from 'rxjs';
 import { FirestoreService } from '@app/services/firestore.service';
-import { Social } from '@app/models/social.model';
+import { SocialModel } from '@app/models/social.model';
 
 Injectable();
 export class SocialsEffects {
@@ -16,7 +16,7 @@ export class SocialsEffects {
       ofType(SocialsActions.loadSocials),
       switchMap(() => {
         return from(this.firestoreService.loadSocials()).pipe(
-          map((socials: Social[] | undefined) => {
+          map((socials: SocialModel[] | undefined) => {
             return SocialsActions.loadSocialsSuccess({ socials });
           })
         );

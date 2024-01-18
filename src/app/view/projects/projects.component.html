@@ -1,0 +1,11 @@
+@for (
+  project of projects;
+  track project?.id;
+  let last = $last;
+  let first = $first
+) {
+  <app-project [last]="last" [first]="first" [project]="project" />
+  @if (!last) {
+    <hr />
+  }
+}

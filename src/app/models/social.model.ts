@@ -1,4 +1,4 @@
-export interface Social {
+export interface SocialModel {
   name: string;
   iconPath?: string;
   linkUrl: string;

@@ -1,6 +1,6 @@
-import { Social } from '@app/models/social.model';
+import { SocialModel } from '@app/models/social.model';
 
-export const HomeLinks: Social[] = [
+export const HomeLinks: SocialModel[] = [
   {
     name: 'LinkedIn',
     linkUrl: 'https://www.linkedin.com/in/mkozhemiakin/',

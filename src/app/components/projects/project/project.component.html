@@ -1,0 +1,36 @@
+<div [ngClass]="{ 'mt-7': first, 'mb-7': last }">
+  @if (project?.name) {
+    <app-text-block [title]="'Project name'" [description]="project.name" />
+  }
+  @if (project?.description) {
+    <app-text-block
+      [title]="'Description'"
+      [description]="project.description" />
+  }
+  @if (project?.technologies) {
+    <app-text-block
+      [title]="'Technologies'"
+      [description]="project.technologies" />
+  }
+  @if (project?.tasks?.length) {
+    <div class="mb-2">
+      <div class="title">
+        <p>Tasks</p>
+      </div>
+      <ul>
+        @for (task of project?.tasks; track task) {
+          <li class="text-lg">{{ task }}</li>
+        }
+      </ul>
+    </div>
+  }
+  @if (project?.link) {
+    <app-text-block [title]="'Link'" [link]="project.link" [isLink]="true" />
+  }
+  @if (project?.duration) {
+    <app-text-block [title]="'Duration'" [description]="project.duration" />
+  }
+  @if (project?.team) {
+    <app-text-block [title]="'Team'" [description]="project.team" />
+  }
+</div>

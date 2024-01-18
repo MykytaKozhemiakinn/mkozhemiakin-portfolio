@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'app-linked-text',
   standalone: true,
   templateUrl: './linked-text.component.html',
-  styleUrl: './linked-text.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LinkedTextComponent {

@@ -1,0 +1,16 @@
+<div class="mb-1">
+  <div class="title">
+    <p class="mb-3 mt-3">{{ title }}</p>
+  </div>
+  @if (isLink && link) {
+    <div class="mb-1 pl-2">
+      <p class="highlight-text-yellow linked-text mt-0">
+        <a [href]="link.url" target="_blank">{{ link.title }}</a>
+      </p>
+    </div>
+  } @else {
+    <div class="mb-1 pl-2">
+      <p class="mt-0">{{ description }}</p>
+    </div>
+  }
+</div>
