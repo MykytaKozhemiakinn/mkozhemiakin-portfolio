@@ -12,6 +12,8 @@ import { SocialsEffects } from '@app/store/socials/socials.effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { projectsReducer } from '@app/store/projects';
 import { ProjectsEffects } from '@app/store/projects/projects.effects';
+import { TechnologiesEffects } from '@app/store/technologies/technologies.effects';
+import { technologiesReducer } from '@app/store/technologies';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -23,8 +25,9 @@ export const appConfig: ApplicationConfig = {
     provideStore({
       socials: socialsReducer,
       projects: projectsReducer,
+      technologies: technologiesReducer,
     }),
     provideStoreDevtools(),
-    provideEffects(...[SocialsEffects, ProjectsEffects]),
+    provideEffects(...[SocialsEffects, ProjectsEffects, TechnologiesEffects]),
   ],
 };

@@ -10,6 +10,4 @@ import { NavbarComponent } from '@app/components/navbar/navbar.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'its mkozhemiakin-portfolio';
-}
+export class AppComponent {}

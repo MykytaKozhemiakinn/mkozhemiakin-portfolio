@@ -1,1 +1,47 @@
-<p>about-me works!</p>
+<h1>More details about me</h1>
+<div class="grid mt-6">
+  <div class="col-12 pb-0">
+    <div class="grid">
+      <div class="col-3 pb-0">
+        <img
+          class="border-circle"
+          src="../../../assets/images/portfolio-photo.webp"
+          alt="portfolio-image"
+          height="200" />
+      </div>
+      <div class="col-4 pb-0 pl-0">
+        <app-text-block [title]="'Name'" [description]="'Mykyta Kozhemiakin'" />
+      </div>
+      <div class="col-2 pb-0">
+        <app-text-block [title]="'Age'" [description]="age + ' y.o.'" />
+      </div>
+      <div class="col-3 pb-0">
+        <app-text-block [title]="'City'" [description]="'Warsaw, Poland'" />
+      </div>
+      <div class="col-offset-3">
+        <app-text-block
+          [noMarginTop]="true"
+          [title]="'Languages'"
+          [description]="'Ukrainian C1, Russian C2, Polish B2, English B2'" />
+      </div>
+    </div>
+  </div>
+  <div class="title col-12 pl-0">
+    <p>Technologies used on a daily basis:</p>
+  </div>
+  <div class="col-12">
+    <div class="grid">
+      @for (technology of mainTechnologies; track technology.name) {
+        <div class="col-2">
+          <app-main-technology [technology]="technology" />
+        </div>
+      }
+    </div>
+  </div>
+  <div class="col-12 title">
+    <p>Other technologies:</p>
+  </div>
+  <div class="col-12">
+    <p class="mt-0">{{ otherTechnologies }}</p>
+  </div>
+</div>

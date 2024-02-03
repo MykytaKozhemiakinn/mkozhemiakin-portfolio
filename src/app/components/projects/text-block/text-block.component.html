@@ -1,6 +1,6 @@
 <div class="mb-1">
   <div class="title">
-    <p class="mb-3 mt-3">{{ title }}</p>
+    <p class="mb-3" [ngClass]="noMarginTop ? 'mt-0' : 'mt-3'">{{ title }}</p>
   </div>
   @if (isLink && link) {
     <div class="mb-1 pl-2">

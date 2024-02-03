@@ -1,5 +1,5 @@
 export interface SocialModel {
   name: string;
-  iconPath?: string;
+  fileName?: string;
   linkUrl: string;
 }

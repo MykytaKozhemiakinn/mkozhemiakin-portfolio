@@ -15,4 +15,10 @@ export class FirestoreService {
   public loadProjects(): Observable<any> {
     return collectionData(collection(this.firestore, 'projects')).pipe(take(1));
   }
+
+  public loadTechnologies(): Observable<any> {
+    return collectionData(collection(this.firestore, 'technologies')).pipe(
+      take(1)
+    );
+  }
 }
