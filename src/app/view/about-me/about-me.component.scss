@@ -1,0 +1,10 @@
+.col-md-3 {
+  width: 20%; /* Adjust as needed */
+}
+
+/* Adjust for 2 technologies per row on smaller screens */
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 50%; /* Show 2 technologies per row */
+  }
+}

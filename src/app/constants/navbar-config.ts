@@ -6,7 +6,7 @@ export const navbarConfig: MenuItem[] = [
     icon: 'assets/icons/home-icon.svg',
     routerLink: '/',
     tooltipOptions: {
-      tooltipPosition: 'right',
+      tooltipPosition: 'bottom',
       tooltipLabel: 'Brief introduction',
     },
   },
@@ -15,7 +15,7 @@ export const navbarConfig: MenuItem[] = [
     icon: 'assets/icons/about-me-icon.svg',
     routerLink: '/about-me',
     tooltipOptions: {
-      tooltipPosition: 'right',
+      tooltipPosition: 'bottom',
       tooltipLabel: 'About me/skills',
     },
   },
@@ -24,7 +24,7 @@ export const navbarConfig: MenuItem[] = [
     icon: 'assets/icons/projects-icon.svg',
     routerLink: '/projects',
     tooltipOptions: {
-      tooltipPosition: 'right',
+      tooltipPosition: 'bottom',
       tooltipLabel: 'Projects',
     },
   },
@@ -33,7 +33,7 @@ export const navbarConfig: MenuItem[] = [
     icon: 'assets/icons/contact-me-icon.svg',
     routerLink: '/contact',
     tooltipOptions: {
-      tooltipPosition: 'right',
+      tooltipPosition: 'bottom',
       tooltipLabel: 'Contact',
     },
   },
